@@ -13,6 +13,7 @@
     
         if ($stmt->execute()) {
             echo "Registration successful!";
+            header('Location: selectuser.php');
         } else {
             echo "Error: " . $stmt->error;
         }
