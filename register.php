@@ -13,9 +13,9 @@
     
         if ($stmt->execute()) {
             echo "Registration successful!";
-            header('Location: selectuser.php');
+            header('Location: login.php');
         } else {
-            echo "Error: " . $stmt->error;
+            echo "This name is taken";
         }
     
         $stmt->close();

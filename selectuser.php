@@ -16,6 +16,6 @@ $users = $conn->query("SELECT id, username FROM users WHERE id != ".$_SESSION['u
 <h2>Choose a user to chat with:</h2>
 <ul>
     <?php while ($row = $users->fetch_assoc()): ?>
-        <li><a href="private_chat.php?receiver_id=<?php echo $row['id']; ?>"><?php echo $row['username']; ?></a></li>
+        <li><a href="privatechat.php?receiver_id=<?php echo $row['id']; ?>"><?php echo $row['username']; ?></a></li>
     <?php endwhile; ?>
 </ul>
